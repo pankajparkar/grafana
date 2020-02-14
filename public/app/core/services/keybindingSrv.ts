@@ -51,8 +51,9 @@ export class KeybindingSrv {
       this.bind('g p', this.goToProfile);
       this.bind('s o', this.openSearch);
       this.bind('f', this.openSearch);
-      this.bind('esc', this.exit);
-      this.bindGlobal('esc', this.globalEsc);
+      // Removed to fix ESCAPE issue
+      // this.bind('esc', this.exit);
+      // this.bindGlobal('esc', this.globalEsc);
     }
   }
 
